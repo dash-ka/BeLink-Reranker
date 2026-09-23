@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "belink-qwen"
+version = "0.1.0"
+description = "Generative Re-ranker for biomedical entity linking"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+dependencies = [
+    "ms-swift @ git+https://github.com/dash-ka/swift-biolink.git@v0.1.0-biolink",
+    "torch==2.7.1+cu126",
+    "transformers==4.57.1",
+    "accelerate==1.12.0",
+    "peft==0.17.1",
+    "trl==0.24.0",
+    "datasets==3.6.0",
+    "safetensors==0.6.2",
+    "tokenizers==0.22.1",
+    "sentencepiece==0.2.1",
+    "einops==0.8.1",
+    "huggingface_hub>=0.23",
+    "bioc",
+    "tqdm",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
