@@ -1,4 +1,4 @@
-# belink-qwen
+# BeLink-Reranker
 
 A generative re-ranker instruction-tuned for biomedical entity linking / candidate reranking.
 Given a sentence, an entity mention, and a list of candidate concepts, the model
