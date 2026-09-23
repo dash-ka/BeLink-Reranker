@@ -15,7 +15,7 @@ this package.
 pip install torch==2.7.1 --index-url https://download.pytorch.org/whl/cu126
 
 # 2. Install belink-qwen (pulls in the modified swift fork + remaining deps)
-pip install git+https://github.com/dash-ka/sqift-belink.git
+pip install git+https://github.com/dash-ka/swift-belink.git
 ```
 
 If your machine uses a different CUDA version, find the matching torch install
