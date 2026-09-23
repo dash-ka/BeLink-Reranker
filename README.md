@@ -58,11 +58,6 @@ model = BelinkReranker.load()
 rerank_biocxml_file(model, "path/to/file.bioc.xml")
 ```
 
-### Choosing a GPU
-
-```python
-model = BelinkReranker.load()
-```
 
 ## License
 
