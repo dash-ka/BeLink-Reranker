@@ -27,15 +27,15 @@ proceed to step 2.
 Model weights are hosted on Hugging Face at
 [`Dash00/belink-reranker`](https://huggingface.co/Dash00/belink-reranker) and are
 downloaded automatically on first use (cached locally under
-`~/.cache/belink_qwen/` by default, or the directory set in the
-`BELINK_QWEN_CACHE` environment variable).
+`~/.cache/belink_reranker/` by default, or the directory set in the
+`BELINK_RERANKER_CACHE` environment variable).
 
 ## Usage
 
 ```python
-from belink_qwen import BiolinkQwenModel, rerank
+from belink_qwen import BelinkReranker, rerank
 
-model = BiolinkQwenModel.load()  # downloads weights on first run
+model = BelinkReranker.load()  # downloads weights on first run
 
 items = [
     (
@@ -52,16 +52,16 @@ print(predictions)
 ### Reranking a BioC XML file directly
 
 ```python
-from belink_qwen import BiolinkQwenModel, rerank_biocxml_file
+from belink_qwen import BelinkReranker, rerank_biocxml_file
 
-model = BiolinkQwenModel.load()
+model = BelinkReranker.load()
 rerank_biocxml_file(model, "path/to/file.bioc.xml")
 ```
 
 ### Choosing a GPU
 
 ```python
-model = BiolinkQwenModel.load(cuda_visible_devices="0")
+model = BelinkReranker.load()
 ```
 
 ## License
