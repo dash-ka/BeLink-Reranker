@@ -14,8 +14,8 @@ this package.
 # 1. Install torch matching CUDA 12.6 (adjust if your system differs)
 pip install torch==2.7.1 --index-url https://download.pytorch.org/whl/cu126
 
-# 2. Install belink-qwen (pulls in the modified swift fork + remaining deps)
-pip install git+https://github.com/dash-ka/swift-belink.git
+# 2. Install swift-biolink (pulls in the modified swift fork + remaining deps)
+pip install git+https://github.com/dash-ka/swift-biolink.git
 ```
 
 If your machine uses a different CUDA version, find the matching torch install
